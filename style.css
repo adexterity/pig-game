@@ -15,8 +15,15 @@ body{
     height: 100vh;
     background: rgba(255, 0, 0, 0.529);
     color: #9A0000;
+    position: relative;
 
 
+}
+
+.signature{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .container{
@@ -165,6 +172,7 @@ body{
     }
     .container{
         min-width: 400px;
+        padding: 2px;
     }
 
     h2{
@@ -174,6 +182,10 @@ body{
 
     h3{
         font-size: 13px;
+    }
+
+    p{
+        font-size: 16px;
     }
 
     .btn{
@@ -198,4 +210,6 @@ body{
         width: 10px;
         height: 10px;
     }
+
+   
 }
