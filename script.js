@@ -1,12 +1,21 @@
 // this game is designed by Adexterity
 
 var score, activePlayer, currentScore, dice1, dice2, gamePlaying;
-// dice1=Math.floor(Math.random() * 6) + 1;
-// dice2=Math.floor(Math.random() * 6) + 1;
 var diceDom1= document.getElementById("dice1");
 var diceDom2= document.getElementById("dice2");
 init();
 var prev;
+
+//the instruction button
+document.querySelector(".modalbtn").addEventListener('click', function(){
+    document.querySelector('.modal-container').classList.toggle("display");
+});
+
+//the cancel button
+document.querySelector(".cancelbtn").addEventListener('click', function(){
+    document.querySelector('.modal-container').classList.toggle("display");
+});
+
 
 //the roll button
 document.querySelector(".roll").addEventListener('click', function(){
@@ -87,8 +96,6 @@ function init(){
     diceDom1.style.display="none";
     diceDom2.style.display="none";
     gamePlaying=true;
-
-    alert("welcome to pig game");
 }
 
 
